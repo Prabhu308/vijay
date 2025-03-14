@@ -8,12 +8,12 @@ pipeline {
         }
         stage('Install Dependencies') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
         stage('Run Application') {
             steps {
-                sh 'node index.js'
+                bat 'node index.js'
             }
         }
     }
